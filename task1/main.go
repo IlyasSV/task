@@ -63,4 +63,20 @@ func main() {
 
 	company.PrintCompany()
 
+	//Задача 10: Использование анонимных полей
+	//Инициализируйте несколько экземпляров структуры Employee и выведите их на экран.
+
+	employee1 := model.Employee{
+		Person: model.Person{
+			Name: "Jon",
+			Age:  20,
+			Address: model.Address{
+				City:       "Japan",
+				Street:     "ASDsd",
+				PostalCode: 1234,
+			},
+		},
+		Position: "1",
+	}
+	employee1.PrintEmployee()
 }
