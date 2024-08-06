@@ -12,7 +12,7 @@ type Person struct {
 }
 
 func (p Person) Print() {
-	fmt.Printf("Name: %s\nAge: %d\nAddress: %s\n", p.Name, p.Age, p.Address)
+	fmt.Printf("Name: %s\nAge: %d\nAddress: %+v\n", p.Name, p.Age, p.Address)
 }
 
 func (p Person) PrintName() {
