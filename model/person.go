@@ -8,7 +8,10 @@ import "fmt"
 type Person struct {
 	Name    string
 	Age     int
-	Address string
+	Address Address
+}
+
+type Address struct {
 }
 
 func PrintPerson(person Person) {
