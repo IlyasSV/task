@@ -10,6 +10,6 @@ type Company struct {
 	Employees []Person
 }
 
-func PrintCompany(name Company) {
-	fmt.Printf("Name company: %s\nInfo employee:%+v\n", name.Name, name.Employees)
+func (c Company) PrintCompany() {
+	fmt.Printf("Name company: %s\nInfo employee:%+v\n", c.Name, c.Employees)
 }

@@ -17,18 +17,18 @@ func main() {
 
 	bbb := model.Person{Name: "BBB", Age: 21, Address: "5-55-555"}
 
-	model.PrintPerson(aaa)
-	model.PrintPerson(bbb)
+	aaa.Print()
+	bbb.Print()
 
 	//Задача 3: Изменение полей структуры
 	//Измените значение поля Address у одного из экземпляров структуры Person
 	//и выведите обновленный экземпляр на экран.
 
 	bbb.Name = "ABC"
-	model.PrintPerson(bbb)
+	bbb.Print()
 
 	aaa.Age = 30
-	model.PrintPerson(aaa)
+	aaa.Print()
 
 	//Задача 4: Методы для структур
 	//Добавьте метод Greet для структуры Person, который будет выводить приветствие
@@ -45,11 +45,13 @@ func main() {
 		Address: "4-7-8",
 	}
 
+	emp1.Print()
+
 	company := model.Company{
 		Name:      "RED",
 		Employees: []model.Person{emp1},
 	}
 
-	model.PrintCompany(company)
+	company.PrintCompany()
 
 }
